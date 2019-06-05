@@ -33,7 +33,7 @@ open class KeychainSwift {
   */
   open var synchronizable: Bool = false
 
-  private let lock = NSLock()
+  private let lock = NSRecursiveLock()
 
   
   /// Instantiate a KeychainSwift object
